@@ -23,10 +23,8 @@
         "ext-pthreads": "*"
     },
     "require": {
-        "php": ">=7.4",
-        "danog/primemodule": "^1",
-        "erusev/parsedown": "^1.7",
-        "symfony/polyfill-mbstring": "*",
+        "phabel/phabel": "^1.0",
+        "php": "*",
         "ext-mbstring": "*",
         "ext-json": "*",
         "ext-xml": "*",
@@ -34,28 +32,7 @@
         "ext-filter": "*",
         "ext-hash": "*",
         "ext-zlib": "*",
-        "ext-fileinfo": "*",
-        "amphp/amp": "^2",
-        "amphp/http-client": "^4",
-        "amphp/socket": "^1",
-        "amphp/dns": "^1",
-        "amphp/byte-stream": "^1",
-        "amphp/file": "^1",
-        "amphp/mysql": "^2",
-        "amphp/postgres": "^1.2",
-        "danog/dns-over-https": "^0.2",
-        "amphp/http-client-cookies": "^1",
-        "danog/tg-file-decoder": "^0.1",
-        "danog/magicalserializer": "^1.0",
-        "league/uri": "^6",
-        "danog/ipc": "^0.1",
-        "amphp/log": "^1.1",
-        "danog/loop": "^0.1.0",
-        "danog/tgseclib": "^3",
-        "amphp/redis": "^1.0",
-        "symfony/polyfill-php80": "^1.18",
-        "amphp/websocket-client": "^1.0",
-        "psr/http-factory": "^1.0"
+        "ext-fileinfo": "*"
     },
     "require-dev": {
         "phpdocumentor/reflection-docblock": "^5.2",
@@ -90,7 +67,8 @@
             "src/BigIntegor.php",
             "src/YieldReturnValue.php",
             "src/danog/MadelineProto/Ipc/Runner/entry.php",
-            "src/polyfill.php"
+            "src/polyfill.php",
+            "___transpiledWithPhabel.php"
         ]
     },
     "autoload-dev": {
@@ -133,7 +111,33 @@
     },
     "extra": {
         "phabel": {
-            "revision": 0
+            "revision": 0,
+            "require": {
+                "danog/primemodule": "^1",
+                "erusev/parsedown": "^1.7",
+                "symfony/polyfill-mbstring": "*",
+                "amphp/amp": "^2",
+                "amphp/http-client": "^4",
+                "amphp/socket": "^1",
+                "amphp/dns": "^1",
+                "amphp/byte-stream": "^1",
+                "amphp/file": "^1",
+                "amphp/mysql": "^2",
+                "amphp/postgres": "^1.2",
+                "danog/dns-over-https": "^0.2",
+                "amphp/http-client-cookies": "^1",
+                "danog/tg-file-decoder": "^0.1",
+                "danog/magicalserializer": "^1.0",
+                "league/uri": "^6",
+                "danog/ipc": "^0.1",
+                "amphp/log": "^1.1",
+                "danog/loop": "^0.1.0",
+                "danog/tgseclib": "^3",
+                "amphp/redis": "^1.0",
+                "symfony/polyfill-php80": "^1.18",
+                "amphp/websocket-client": "^1.0",
+                "psr/http-factory": "^1.0"
+            }
         }
     }
 }
