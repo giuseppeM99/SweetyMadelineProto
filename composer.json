@@ -1,6 +1,6 @@
 {
-    "name": "danog/madelineproto",
-    "description": "PHP implementation of telegram's MTProto protocol.",
+    "name": "giuseppem99/sweetymadelineproto",
+    "description": "PHP sweet implementation of telegram's MTProto protocol.",
     "type": "project",
     "license": "AGPL-3.0-only",
     "homepage": "https://docs.madelineproto.xyz",
