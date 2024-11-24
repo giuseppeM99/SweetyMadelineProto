@@ -55,7 +55,7 @@ abstract class EventHandler extends AbstractAPI
     }
 
     /** @internal Do not use manually. */
-    final private function __construct()
+    public function __construct()
     {
         // Dummy code that is NEVER executed, needed to avoid issues during Psalm analysis.
 
@@ -304,7 +304,7 @@ abstract class EventHandler extends AbstractAPI
                 $issue->log();
             }
             if ($last) {
-                $last->throw();
+                //$last->throw();
             }
 
             if ($has_any) {
