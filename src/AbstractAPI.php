@@ -33,7 +33,7 @@ abstract class AbstractAPI extends InternalDoc
      *
      * @param string $eventHandler Event handler class name
      */
-    protected function startAndLoopInternal(string $eventHandler): void
+    public function startAndLoopInternal(string $eventHandler): void
     {
         $started = false;
         $errors = [];

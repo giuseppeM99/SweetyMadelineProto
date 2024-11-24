@@ -97,7 +97,8 @@ class Exception extends \Exception
         ) {
             return false;
         }
-        throw new self($errstr, $errno, null, $errfile, $errline);
+        //throw new self($errstr, $errno, null, $errfile, $errline);
+        return false;
     }
     /**
      * @internal
