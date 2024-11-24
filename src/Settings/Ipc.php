@@ -24,6 +24,9 @@ use danog\MadelineProto\SettingsAbstract;
  */
 final class Ipc extends SettingsAbstract
 {
+
+    private bool $slow = false;
+
     public function __construct()
     {
         Magic::start(light: true);
@@ -34,6 +37,13 @@ final class Ipc extends SettingsAbstract
      */
     public function getSlow(): bool
     {
-        return Magic::$isIpcWorker || \PHP_OS_FAMILY === 'Windows';
+        return $this->slow || Magic::$isIpcWorker || \PHP_OS_FAMILY === 'Windows';
+    }
+
+    public function setSlow(bool $slow): self
+    {
+        $this->slow = $slow;
+
+        return $this;
     }
 }
