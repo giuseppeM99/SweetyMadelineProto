@@ -246,7 +246,7 @@ final class Magic
                 }
             }
             try {
-                ini_set('memory_limit', -1);
+                //ini_set('memory_limit', -1);
             } catch (Throwable $e) {
             }
             // Check if we're in a console, for colorful log output

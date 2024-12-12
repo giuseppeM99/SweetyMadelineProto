@@ -80,7 +80,7 @@ abstract class Tools extends AsyncTools
      */
     public static function testFibers(int $fiberCount = 100000): array
     {
-        ini_set('memory_limit', -1);
+        //ini_set('memory_limit', -1);
 
         $f = [];
         for ($x = 0; $x < $fiberCount; $x++) {
